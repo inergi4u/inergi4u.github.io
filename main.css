@@ -1,25 +1,44 @@
+:root {
+    --limestone: #d4c3a6;
+    --horizon: #a0cabc;
+    --sand: #f0a376;
+    --astro: #134f5c;
+}
+
 body {
+    position: relative;
+    text-align: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f1e3;
+    background-color: var(--limestone);
     color: black;
 }
 header {
     background: url('https://source.unsplash.com/1600x900/?construction-site') no-repeat center center/cover;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 10px;
 }
 header img {
-    max-width: 150px;
+    max-width: 300px;
     margin: 10px auto;
     display: block;
 }
+header .banner-image {
+    width: 100%;
+    height: auto;
+}
+header h1 {
+    position: relative;
+    margin-top: 20px;
+}
+
 nav {
     text-align: center;
-    background-color: #0077b6;
-    padding: 10px 0;
+    background-color: var(--horizon);
+    padding: 5px 0;
+    margin-bottom: 10px;
 }
 nav a {
     color: black;
@@ -31,6 +50,14 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+nav a.active {
+    color: white;
+    background-color: var(--astro); /* Change this to your desired background color */
+    padding: 10px 15px; /* Adjust padding to match the overall design */
+    border-radius: 5px; /* Optional: Add border-radius for better appearance */
+}
+
 section {
     padding: 50px 20px;
     max-width: 1200px;
@@ -40,7 +67,7 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #005f99;
+    background-color: var(--astro);
     color: white;
     margin-top: 20px;
 }
@@ -60,12 +87,12 @@ form input, form textarea, form button {
     border-radius: 5px;
 }
 form button {
-    background-color: #0077b6;
+    background-color: var(--astro);
     color: white;
     border: none;
     cursor: pointer;
     font-size: 1em;
 }
 form button:hover {
-    background-color: #005f99;
+    background-color: var(--horizon);
 }
