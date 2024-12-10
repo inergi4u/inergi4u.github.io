@@ -14,8 +14,8 @@ body {
     background-color: var(--limestone);
     color: black;
 }
+
 header {
-    background: url('https://source.unsplash.com/1600x900/?construction-site') no-repeat center center/cover;
     color: black;
     text-align: center;
     padding: 50px 10px;
@@ -50,12 +50,11 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
-
 nav a.active {
     color: white;
-    background-color: var(--astro); /* Change this to your desired background color */
-    padding: 10px 15px; /* Adjust padding to match the overall design */
-    border-radius: 5px; /* Optional: Add border-radius for better appearance */
+    background-color: var(--astro); 
+    padding: 10px 15px;
+    border-radius: 5px; 
 }
 
 section {
@@ -64,6 +63,7 @@ section {
     margin: auto;
     line-height: 1.8;
 }
+
 footer {
     text-align: center;
     padding: 10px;
@@ -71,6 +71,7 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
 .products-list ul {
     list-style: none;
     padding: 0;
@@ -78,6 +79,7 @@ footer {
 .products-list ul li {
     margin: 10px 0;
 }
+
 form input, form textarea, form button {
     display: block;
     width: 100%;
